@@ -1,7 +1,7 @@
 package cn.plasticlove.config;
 
 import cn.plasticlove.component.MyLocaleResolver;
-import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -36,7 +36,7 @@ public class WebMvcConfig extends WebMvcConfigurationSupport {
         //parse the static resources (js/css/images)
         registry.addResourceHandler("/**").addResourceLocations("classpath:/static/");
         // registry.addResourceHandler("/**").addResourceLocations("classpath:/templates/");
-        super.addResourceHandlers(registry);
+        // super.addResourceHandlers(registry);
     }
 
 
