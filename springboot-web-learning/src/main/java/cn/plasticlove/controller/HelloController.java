@@ -1,6 +1,8 @@
 package cn.plasticlove.controller;
 
+import cn.plasticlove.exception.MyException;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -13,7 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloController {
 
     @RequestMapping("/hello")
-    public String hello(){
+    public String hello(String user){
+        if (StringUtils.isEmpty(user)){
+            throw new MyException();
+        }
         return "Dashboard";
     }
 }

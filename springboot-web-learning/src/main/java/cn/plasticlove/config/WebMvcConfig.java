@@ -40,9 +40,9 @@ public class WebMvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**").excludePathPatterns("/","/index.html").excludePathPatterns("/user/login").
-                //springboot2.0会拦截静态资源
-                excludePathPatterns("/static/**").excludePathPatterns("/asset/**").excludePathPatterns("/images/**");
+//        registry.addInterceptor(new LoginHandlerInterceptor()).addPathPatterns("/**").excludePathPatterns("/","/index.html").excludePathPatterns("/user/login").
+//                //springboot2.0会拦截静态资源
+//                excludePathPatterns("/static/**").excludePathPatterns("/asset/**").excludePathPatterns("/images/**");
     }
 
     @Bean
