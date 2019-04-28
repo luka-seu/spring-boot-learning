@@ -19,13 +19,13 @@ public class DeptController {
     DepartmentMapper departmentMapper;
 
 
-    @GetMapping("/dept/{id}")
-    public Department getDept(@PathVariable("id") Integer id){
-       return departmentMapper.getDeptById(id);
-    }
+    // @GetMapping("/dept/{id}")
+    // public Department getDept(@PathVariable("id") Integer id){
+    //    return departmentMapper.getDeptById(id);
+    // }
 
-    @PostMapping("/insert")
-    public int insertDept(Department department){
-        return departmentMapper.insertDept(department);
-    }
+    // @PostMapping("/insert")
+    // public int insertDept(Department department){
+    //     return departmentMapper.insertDept(department);
+    // }
 }

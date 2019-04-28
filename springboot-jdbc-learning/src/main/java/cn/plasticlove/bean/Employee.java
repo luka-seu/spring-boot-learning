@@ -1,11 +1,16 @@
 package cn.plasticlove.bean;
 
-public class Employee {
+import java.io.Serializable;
+
+public class Employee implements Serializable {
     private Integer id;
     private String lastName;
     private String gender;
     private String email;
     private Integer dId;
+
+    public Employee() {
+    }
 
     public Integer getId() {
         return id;
